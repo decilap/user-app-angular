@@ -7,4 +7,13 @@
     .user_avatar{
        margin-right: 10px;
     }
+    .card_info{
+        &_icon{
+            margin-top: 10px;
+            i{
+                margin-right: 10px;
+                color: #FF8B91;
+            }
+        }
+    }
 }

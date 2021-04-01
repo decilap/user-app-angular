@@ -8,6 +8,7 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./user-details.component.scss']
 })
 export class UserDetailsComponent implements OnInit {
+  pageName = "PROFILE";
   user$:Observable<any>;
   constructor(
     private route: ActivatedRoute,

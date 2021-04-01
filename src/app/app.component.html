@@ -3,11 +3,11 @@
       <i (click)="back()" *ngIf="!isHome;"  class="fas fa-chevron-left"></i>
       <i *ngIf="isHome;"  class="fas fa-home"></i>
     </div>
-    <h2>FEED</h2>
+    <h2>{{pageName}}</h2>
     <nav>
       <i class="fas fa-ellipsis-v"></i>
     </nav>
 </header>
 <app-loader></app-loader>
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 <footer></footer>
