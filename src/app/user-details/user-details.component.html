@@ -1,0 +1,19 @@
+<div class="user-details">
+    <div class="user_card" *ngIf="(user$ | async) as user">
+        <div class="user_avatar">
+            <img [src]="user.picture.large" alt="">
+        </div>
+        <div class="card_info">
+            <div class="card_info_user">
+                <div class="info_genre">
+                    Genre: {{ user.gender }} 
+                </div>
+                <div class="info_fullname">
+                    {{ user.name.first }} {{ user.name.last }}
+                </div>
+                <div class="info_age">Age: {{ user.dob.age }} ans</div>
+                <div class="info_email">{{ user.email }}</div>
+            </div>
+        </div>
+    </div>  
+</div>

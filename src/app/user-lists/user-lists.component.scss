@@ -1,0 +1,37 @@
+
+    .user_lists{
+        list-style: none;
+        padding: 10px;
+        background-color: #D9DEE4;
+        .user_card{
+            display: flex;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            height: 50px;
+            padding: 10px;
+            .card_info{
+                font-size: 14px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                &_icon{
+                    img{
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+                &_user{
+                    padding: 0 10px;
+                }
+            }
+        }
+        &_avatar{
+            display: flex;
+            img{
+                border-radius: 50%;
+            }
+        }
+    }
+
+  
