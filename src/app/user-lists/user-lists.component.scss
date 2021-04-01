@@ -23,6 +23,12 @@
                 }
                 &_user{
                     padding: 0 10px;
+                    .info_fullname{
+                        color: #000;
+                    }
+                    .info_email{
+                        color: #FF8B91;
+                    }
                 }
             }
         }
