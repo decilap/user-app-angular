@@ -8,6 +8,7 @@ import { map, filter, tap, delay } from 'rxjs/operators';
 export class UserService {
 
   constructor(private http: HttpClient) {}
+  
   getUsers(){
    return this.http.get("assets/data.json");
   }

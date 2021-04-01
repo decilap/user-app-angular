@@ -18,9 +18,9 @@ export class UserDetailsComponent implements OnInit {
   }
 
   loadDataUser(){
- //   const routeParams = this.route.snapshot.paramMap;
-  //  const productIdFromRoute = routeParams.get('userId');
-    this.user$ = this.userService.getUser("blackleopard670");
+    const routeParams = this.route.snapshot.paramMap;
+    const userId = routeParams.get('userId');
+    this.user$ = this.userService.getUser(userId);
   }
 
 }
